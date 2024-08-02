@@ -1,0 +1,268 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5pt solid #321E25;
+}
+header h1 {
+    margin: 0;
+}
+header div {
+    flex: 1;
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50pt;
+}
+.content img {
+    max-width: 400px;
+    max-height: 600px;
+    margin-right: 20px;
+    border: 2px solid #321E25;
+}
+.menu {
+    background: #7a7a7a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    height: 1pt;
+}
+.menu div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 0.5pt solid #7a7a7a;
+}
+.footer div {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100px;
+}
+
+.footerPhoto1 {
+  max-width: 20pt;
+  max-height: 20pt;
+}
+
+.footerPhoto1 img{
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+}
+
+.footerPhoto2 {
+  max-width: 20pt;
+  max-height: 20pt;
+}
+
+.footerPhoto2 img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  margin-top: 1.4pt;
+}
+
+.footerPhoto3 {
+  max-width: 20pt;
+  max-height: 20pt;
+}
+
+.footerPhoto3 img{
+  width: 160%;
+  height: 160%;
+  object-fit: cover;
+  margin-top: -5pt;
+  margin-left: -5pt;
+}
+
+.footerPhoto4 {
+  max-width: 20pt;
+  max-height: 20pt;
+}
+
+.footerPhoto4 img{
+  width: 115%;
+  height: 115%;
+  object-fit: cover;
+  margin-left: -1pt;
+}
+.mainPhoto{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px ;
+  height: 200px;
+  border: 2pt solid;
+  border-color: #321E25;
+  margin: 10pt; 
+  max-width: 200px;
+  max-height: 200px; 
+
+}
+.mainPhoto img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.btn-new {
+  width: 100pt;
+  height: 30pt;
+  border-radius: 2px;
+  color: white;
+  transition: .2s linear;
+  background: #4F2828;
+  margin-top: 400pt;
+}
+
+.btn-new:hover {
+box-shadow: 0 0 0 2px white, 0 0 0 4px #5e5e5e;
+}
+
+.btn-new2 {
+border-radius: 50%;
+color: white;
+transition: .2s linear;
+background: #0B63F6;
+}
+
+.btn-new2:hover {
+-webkit-transform: rotateZ(5deg);
+-ms-transform: rotateZ(5deg);
+transform: rotateZ(5deg);
+}
+
+.btn-new3 {
+border-radius: 50%;
+color: white;
+transition: .2s linear;
+background: #0B63F6;
+}
+
+.btn-new3:hover {
+-webkit-transform: rotateZ(-5deg);
+-ms-transform: rotateZ(-5deg);
+transform: rotateZ(-5deg);
+}
+
+.subtitle {
+color: #7a7a7a;
+font-size: 20px;
+line-height: 3;
+margin: 0;
+} 
+
+.create-line {
+margin: 5pt;
+height: 200px;
+border-left: 3px solid #321e25;
+}
+
+.line-height{
+line-height: 0.7;
+}
+
+.mainBlock {
+max-width: 300pt;
+max-height: 200pt;
+}
+
+.textAbout {
+margin: 50pt;
+max-width: 200pt;
+}
+
+/* Стили для модального окна */
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0,0,0,0.4);
+animation: fadeIn 0.5s;
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+max-width: 600px; /* Ограничение максимальной ширины */
+transform: translateY(-50px);
+opacity: 0;
+transition: all 0.5s ease-in-out;
+display: flex;
+
+}
+
+.modal.show .modal-content {
+transform: translateY(0);
+opacity: 1;
+}
+
+.modal-image {
+flex: 1;
+}
+
+.modal-text {
+flex: 1;
+margin-top: 100pt;
+max-width: 120pt;
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+max-height: 20pt;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+from {opacity: 1;}
+to {opacity: 0;}
+}
