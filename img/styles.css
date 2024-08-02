@@ -125,13 +125,11 @@ main {
   max-width: 200px;
   max-height: 200px; 
 
-
 }
 .mainPhoto img{
   width:100%;
   height:100%;
   object-fit: cover;
-  background-color: #707070;
 }
 
 .btn-new {
@@ -152,7 +150,7 @@ box-shadow: 0 0 0 2px white, 0 0 0 4px #5e5e5e;
 border-radius: 50%;
 color: white;
 transition: .2s linear;
-background: #707070;
+background: #0B63F6;
 }
 
 .btn-new2:hover {
@@ -165,7 +163,7 @@ transform: rotateZ(5deg);
 border-radius: 50%;
 color: white;
 transition: .2s linear;
-background: #707070;
+background: #0B63F6;
 }
 
 .btn-new3:hover {
